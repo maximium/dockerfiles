@@ -9,41 +9,41 @@ See internal READMEs for further information.
 
 ### SphinxSearch
 
-[![Docker](http://dockeri.co/image/leodido/sphinxsearch)](https://registry.hub.docker.com/u/leodido/sphinxsearch/)
+[![Docker](http://dockeri.co/image/maximium/sphinxsearch)](https://registry.hub.docker.com/u/maximium/sphinxsearch/)
 
 SphinxSearch is an open source search engine designed to provide full-text search functionality to client applications.
 
 - Stables: from 2.1.6 to latest (2.2.10)
 - Betas: from 2.2.1-beta to 2.3.1-beta
 
-Also available on [docker index](https://registry.hub.docker.com/u/leodido/sphinxsearch).
+Also available on [docker index](https://registry.hub.docker.com/u/maximium/sphinxsearch).
 
 Pull all with:
 
 ```
-$ docker pull leodido/sphinxsearch
+$ docker pull maximium/sphinxsearch
 ```
 
 Or pull a specific version:
 
 ```
-$ docker pull leodido/sphinxsearch:latest
+$ docker pull maximium/sphinxsearch:latest
 ```
 
 ### TeX Live
 
-[![Docker](http://dockeri.co/image/leodido/texlive)](https://registry.hub.docker.com/u/leodido/texlive/)
+[![Docker](http://dockeri.co/image/maximium/texlive)](https://registry.hub.docker.com/u/maximium/texlive/)
 
 The default free software distribution for the TeX typesetting system. It provides a comprehensive TeX system with binaries, macro packages, and fonts.
 
 - 2014 (full scheme installation)
 
-Also available on [docker index](https://registry.hub.docker.com/u/leodido/texlive).
+Also available on [docker index](https://registry.hub.docker.com/u/maximium/texlive).
 
 Pull a version with:
 
 ```
-$ docker pull leodido/texlive:2014
+$ docker pull maximium/texlive:2014
 ```
 
 ## Copyright and license

@@ -65,7 +65,7 @@ Both scripts and Sphinx Search's tools (e.g., the `spelldump` tool) are availabl
 To list all Sphinx Search's tool you can execute:
 
 ```
-docker run -it leodido/sphinxsearch:2.2.1-beta ls /usr/local/bin
+docker run -it maximium/sphinxsearch:2.2.1-beta ls /usr/local/bin
 # indexer  indextool  searchd  spelldump	wordbreaker
 ```
 
@@ -75,13 +75,13 @@ You can clone this repository and manually build it.
 
 ```
 cd dockerfiles/sphinxsearch\:2.2.1-beta
-docker build -t leodido/sphinxsearch:2.2.1-beta .
+docker build -t maximium/sphinxsearch:2.2.1-beta .
 ```
 
 Otherwise you can pull this image from docker index.
 
 ```
-docker pull leodido/sphinxsearch:2.2.1-beta
+docker pull maximium/sphinxsearch:2.2.1-beta
 ```
 
 ## Usage
@@ -89,7 +89,7 @@ docker pull leodido/sphinxsearch:2.2.1-beta
 The simplest use case is to start a Sphinx Search container, attach to it and do whatever you want with it:
 
 ```
-docker run -i -t leodido/sphinxsearch:2.2.1-beta /bin/bash
+docker run -i -t maximium/sphinxsearch:2.2.1-beta /bin/bash
 ```
 
 ### Daemonized usage (1)
@@ -103,7 +103,7 @@ We also want to link to exposed `9306` port to query Sphinx Search from the host
 So, the command to run a **daemonized instance** of this container is:
 
 ```
-SS=$(docker run -i -t -v $PWD:/usr/local/etc -p 9306 -d leodido/sphinxsearch:2.2.1-beta searchd.sh)
+SS=$(docker run -i -t -v $PWD:/usr/local/etc -p 9306 -d maximium/sphinxsearch:2.2.1-beta searchd.sh)
 ```
 
 Now we want to see to which host address it has been linked:
@@ -135,7 +135,7 @@ We need:
 So, assuming that in our current directory (i.e., `$PWD`) we have these files, we run a daemonized instance of Sphinx Search as follow:
 
 ```
-docker run -i -t -v $PWD:/usr/local/etc -p 127.0.0.1:9306:9306 -d leodido/sphinxsearch:2.2.1-beta indexall.sh
+docker run -i -t -v $PWD:/usr/local/etc -p 127.0.0.1:9306:9306 -d maximium/sphinxsearch:2.2.1-beta indexall.sh
 ```
 
 This way we have indexed our documents and started serving queries.

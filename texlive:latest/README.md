@@ -54,7 +54,7 @@ Suppose you have you **TeX** file named `sample.tex` into a `test` directory in 
 With this docker image you can know compile it this way:
 
 ```
-$ docker run -it -v $HOME/test:/test leodido/texlive:latest pdflatex -output-directory=/test test/sample.tex
+$ docker run -it -v $HOME/test:/test maximium/texlive:latest pdflatex -output-directory=/test test/sample.tex
 ```
 
 If compilation succeeded, into your `$HOME/test` directory you will have the resulting files (e.g., `sample.pdf`).
@@ -67,13 +67,13 @@ You can clone this repository and manually build it.
 
 ```
 cd dockerfiles/texlive\:2014
-docker build -t leodido/texlive:latest .
+docker build -t maximium/texlive:latest .
 ```
 
 Otherwise you can pull this image from the docker index.
 
 ```
-docker pull leodido/texlive:latest
+docker pull maximium/texlive:latest
 ```
 
 Credits

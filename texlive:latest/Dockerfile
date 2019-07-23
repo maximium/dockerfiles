@@ -5,7 +5,7 @@
 # @author 	leodido <leodidonato@gmail.com>
 FROM centos:centos7
 
-MAINTAINER Leonardo Di Donato, leodidonato@gmail.com
+MAINTAINER Maxim Lovchikov, maxim.lovchikov@gmail.com
 
 # Deps installation
 RUN yum install -y wget tar perl fontconfig

@@ -4,7 +4,7 @@
 # @author 	leodido <leodidonato@gmail.com>
 FROM centos:centos7
 
-MAINTAINER Leonardo Di Donato, leodidonato@gmail.com
+MAINTAINER Maxim Lovchikov, maxim.lovchikov@gmail.com
 
 # environment variables
 ENV SPHINX_VERSION=2.2.2-beta RE2_VERSION=2015-11-01 SPHINX_INDEX_DIR=/var/idx/sphinx SPHINX_LOG_DIR=/var/log/sphinx SPHINX_LIB_DIR=/var/lib/sphinx SPHINX_RUN_DIR=/var/run/sphinx SPHINX_DIZ_DIR=/var/diz/sphinx
