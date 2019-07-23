@@ -2,18 +2,18 @@
 #
 # @version 	2.2.7
 # @author 	leodido <leodidonato@gmail.com>
-FROM centos:centos6
+FROM centos:centos7
 
 MAINTAINER Leonardo Di Donato, leodidonato@gmail.com
 
 # environment variables
 ENV SPHINX_VERSION=2.2.7-release RE2_VERSION=2015-11-01 SPHINX_INDEX_DIR=/var/idx/sphinx SPHINX_LOG_DIR=/var/log/sphinx SPHINX_LIB_DIR=/var/lib/sphinx SPHINX_RUN_DIR=/var/run/sphinx SPHINX_DIZ_DIR=/var/diz/sphinx
 # add public key
-RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 # install utils
 RUN yum install wget tar -y -q
 # install sphinxsearch build dependencies
-RUN yum install autoconf automake libtool gcc-c++ -y -q
+RUN yum install autoconf automake libtool gcc-c++ make -y -q
 # install sphinxsearch dependencies for odbc
 RUN yum install unixODBC-devel -y -q
 # install sphinxsearch dependencies for mysql support

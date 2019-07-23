@@ -3,7 +3,7 @@
 # @link     http://www.tug.org/texlive
 # @version 	2014
 # @author 	leodido <leodidonato@gmail.com>
-FROM centos:centos6
+FROM centos:centos7
 
 MAINTAINER Leonardo Di Donato, leodidonato@gmail.com
 

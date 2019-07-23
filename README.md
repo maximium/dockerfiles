@@ -1,6 +1,8 @@
 Dockerfiles
 ===========
 
+This is a fork of [leodido/sphinxsearch](https://hub.docker.com/r/leodido/sphinxsearch) but based on centos7 image for compatibility with modern kernels.
+
 A collection of docker files.
 
 See internal READMEs for further information.
